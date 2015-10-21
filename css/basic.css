@@ -1,0 +1,59 @@
+.wp_slide_up_content_tab_container {
+	width: 40em;
+	position: fixed;
+	bottom: 0;
+	right: 20%;
+	padding: 0;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, .7);
+	border-radius: 10px 10px 0 0;
+	font-family: Georgia, serif;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: left;
+	z-index: 99999;
+}
+.wp_slide_up_content_tab_content {
+	background: #fff;
+	background: rgba(255, 255, 255, 1);
+	color: #2b2b2b;
+	padding: 20px 0;
+	display: none;
+}
+.wp_slide_up_content_tab_container h3 {
+	margin: 0;
+	padding: 12px 20px;
+	text-align: center;
+	background: #d24444;
+	background: hsl(360, 50%, 50%);
+	font-size: 16px !important;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+	transition: linear all .2s;
+	border-radius: 10px 10px 0 0;
+	cursor: pointer;
+}
+.wp_slide_up_content_tab_container h3:hover {
+	background: hsl(360, 70%, 40%);
+}
+.wp_slide_up_content_tab_content p {
+	padding: 0;
+	margin: 1em 20px;
+	font-size: 14px !important;
+}
+.wp_slide_up_content_tab_content p:first-child {
+	margin-top: 0;
+}
+.wp_slide_up_content_tab_content p:last-child {
+	margin-bottom: 0;
+} 
+.wp_slide_up_content_tab_content img {
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 930px) {
+  /* Hide the tab entirely on small screen devices */
+	.wp_slide_up_content_tab_container {
+		display: none;
+	}
+}
